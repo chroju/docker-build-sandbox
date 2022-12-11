@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM busybox:latest
+FROM ubuntu:latest
 RUN groupadd -g 1000 example && \
     useradd -m -s /bin/bash -u 1000 -g 1000 example
 USER example
